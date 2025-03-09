@@ -7,7 +7,7 @@ public class WeaponHandler : MonoBehaviour
     public bool canDealDamage;
     public List<GameObject> hasDealtDamage;
     [SerializeField] CapsuleCollider myCollider;
-    [SerializeField] public float knockback = 1.5f;
+    [SerializeField] public float knockback = 1f;
     [SerializeField] float weaponLength;
     [SerializeField] private LayerMask enemyLayerMask;
     [SerializeField] float sphereRadius = 0.5f;

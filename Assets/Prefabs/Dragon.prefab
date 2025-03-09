@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screamParent: {fileID: 6112484191628351184}
-  targetScale: 30
+  targetScale: 35
   screamDuration: 2.5
 --- !u!1 &4892869467970383536
 GameObject:
@@ -154,6 +154,7 @@ MonoBehaviour:
   <Health>k__BackingField: {fileID: 1105969806836273979}
   <Target>k__BackingField: {fileID: 4699654303239354421}
   <EnemyVisual>k__BackingField: {fileID: 0}
+  <Phase2Visual>k__BackingField: {fileID: 0}
   <DropVisual>k__BackingField: {fileID: 0}
   <isDragon>k__BackingField: 1
   <canScream>k__BackingField: 0
@@ -180,8 +181,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  isPlayer: 0
   health: 0
   invincible: 0
+  defendSuccess: 0
 --- !u!114 &4699654303239354421
 MonoBehaviour:
   m_ObjectHideFlags: 0

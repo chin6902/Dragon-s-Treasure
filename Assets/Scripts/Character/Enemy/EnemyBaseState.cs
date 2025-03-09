@@ -27,21 +27,17 @@ namespace ActionGame
 
         protected void FacePlayer()
         {
-            // Get the direction towards the player
             Vector3 directionToPlayer = (stateMachine.Player.transform.position - stateMachine.transform.position).normalized;
 
-            // Ignore vertical difference (Y-axis) by flattening the direction
             directionToPlayer.y = 0f;
 
-            // Calculate the desired rotation to face the player
             Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
 
             float RotationSpeed = 2.5f;
-            // Apply the rotation smoothly
             stateMachine.transform.rotation = Quaternion.Slerp(
                 stateMachine.transform.rotation,
                 targetRotation,
-                Time.deltaTime * RotationSpeed // Adjust the rotation speed if needed
+                Time.deltaTime * RotationSpeed 
             );
         }
 

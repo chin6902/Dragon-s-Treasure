@@ -151,7 +151,7 @@ namespace ActionGame
             float distanceToEnemy = Vector3.Distance(stateMachine.Player.transform.position, enemyPosition);
             bool isEnemyDragon = stateMachine.Player.Targeter.EnemyDragon();
 
-            float moveThreshold = isEnemyDragon ? 2.5f : 1f;
+            float moveThreshold = isEnemyDragon ? 3.6f : 1f;
 
             if (distanceToEnemy > moveThreshold)
             {
@@ -161,7 +161,7 @@ namespace ActionGame
 
                 if (isEnemyDragon)
                 {
-                    forwardMove = 2f;
+                    forwardMove = 3f;
                 }
                 else
                 {
