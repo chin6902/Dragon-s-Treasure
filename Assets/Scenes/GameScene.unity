@@ -8629,7 +8629,7 @@ MonoBehaviour:
   enemyPrefabType1: {fileID: 5796215806594738949, guid: f5c2fbe83236f6c45850e39321525321, type: 3}
   enemyPrefabType2: {fileID: 8275575993722784052, guid: d7439cb2abb521f43b1ca23409e31e98, type: 3}
   maxEnemies: 14
-  spawnRadius: 75
+  spawnRadius: 70
   spawnInterval: 3
   minSpawnDistance: 5
 --- !u!4 &1503648254
