@@ -6,6 +6,7 @@ public class Temple1 : Interactable
     [Header("Item Data")]
     [SerializeField] private string itemName;
     [SerializeField] private GameObject ParentObject;
+    [SerializeField] private float count;
 
     public override void Start()
     {
@@ -17,9 +18,9 @@ public class Temple1 : Interactable
     {
         base.Interaction();
 
-        if(GameManager.Instance.RedCrystalCount >= 3 )
+        if(GameManager.Instance.RedCrystalCount >= count )
         {
-            GameManager.Instance.RedCrystalCount -= 3;
+            GameManager.Instance.RedCrystalCount -= count;
             GameManager.Instance.Temple1_clear = true;
         }
     }

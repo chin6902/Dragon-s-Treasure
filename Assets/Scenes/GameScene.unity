@@ -8628,8 +8628,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabType1: {fileID: 5796215806594738949, guid: f5c2fbe83236f6c45850e39321525321, type: 3}
   enemyPrefabType2: {fileID: 8275575993722784052, guid: d7439cb2abb521f43b1ca23409e31e98, type: 3}
-  maxEnemies: 14
-  spawnRadius: 70
+  maxEnemies: 16
+  spawnRadius: 60
   spawnInterval: 3
   minSpawnDistance: 5
 --- !u!4 &1503648254
@@ -10826,6 +10826,7 @@ MonoBehaviour:
   isInteractable: 1
   itemName: 
   ParentObject: {fileID: 0}
+  count: 1
 --- !u!65 &1962729996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11158,6 +11159,7 @@ MonoBehaviour:
   isInteractable: 1
   itemName: 
   ParentObject: {fileID: 0}
+  count: 1
 --- !u!65 &2004106601
 BoxCollider:
   m_ObjectHideFlags: 0

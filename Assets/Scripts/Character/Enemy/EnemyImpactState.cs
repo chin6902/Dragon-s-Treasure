@@ -11,7 +11,7 @@ public class EnemyImpactState : EnemyBaseState
 
     private float duration = 1.5f;
 
-    private float waitTimer = 1.5f;
+    private float waitTimer = 1f;
 
     public EnemyImpactState(EnemyStateMachine stateMachine) : base(stateMachine)
     {
